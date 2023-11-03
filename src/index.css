@@ -1,13 +1,67 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app_container {
+  background-color: rgb(184, 184, 95);
+  width: 100vw;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
 }
+.card {
+  /* background-color: blue; */
+  min-width: 240px;
+  border-radius: 10px;
+  position: relative;
+  overflow-y: hidden;
+}
+video {
+  height: 100%;
+}
+.card div {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  font-family: sans-serif;
+}
+
+.slider_container {
+  /* background-color: cadetblue; */
+  top: 20px;
+  width: 100vw;
+  height: 100vh;
+}
+.main_slide {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_slide button {
+  position: absolute;
+  bottom: 10px;
+  width: 250px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(38, 106, 216);
+  color: #fff;
+  cursor: pointer;
+}
+video {
+  border-radius: 10px;
+}
+
